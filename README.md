@@ -26,7 +26,7 @@ REST API have very strict VERB/methods
 - PATCH
 
 For each of the verb you plan on implementing in for the controller you will create a public function.
-
+<code>
 class BookController{
 	public function GET(){
 
@@ -39,7 +39,7 @@ class BookController{
 
 	}
 }
-
+</code>
 The routREST class instanciate your controller object and call the function that matches the VERB used to call the api.
 Within that function you have access to;
 
