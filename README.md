@@ -11,6 +11,7 @@ controller. There is a strict naming convention.
 Naming Convention:
 
 In the example below, 'Books' is the first significant element of the api call
+
 http://restserver.xxx/api/vi/Books/
 http://restserver.xxx/api/vi/{FIRST_PATH_ELEMENT}/
 
