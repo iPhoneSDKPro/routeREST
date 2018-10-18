@@ -13,6 +13,7 @@ Naming Convention:
 In the example below, 'Books' is the first significant element of the api call
 
 http://restserver.xxx/api/vi/Books/
+
 http://restserver.xxx/api/vi/{FIRST_PATH_ELEMENT}/
 
 You must have a php class file named BooksController.php
