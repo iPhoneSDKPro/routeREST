@@ -36,14 +36,14 @@ Usage
 	       public function validateInputs($methodCall,$uriArray, $requestVars,$json){
 	       	   //Read below "Input Validation"
 	       }
-		public static function get(){
-			return jsondate;
+		public static function get(($uriArray, $requestVars, $json)){
+			return $jsondata;
 		}
-		public static function post{
-
+		public static function post(($uriArray, $requestVars, $json)){
+			return $jsondata;
 		}
-		public static function delete(){
-
+		public static function delete(($uriArray, $requestVars, $json)){
+			return $jsondata;
 		}
 	}
 
