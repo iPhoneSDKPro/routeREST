@@ -56,13 +56,32 @@ Namespace Support:
 You can place all your controller in a single namespace for use with routeREST by passing the namespace definition in the
 constructor.
 
-router = new RRouter(\\MyApp\\Controller);
-
-In this example your controller are expected to all be in the:
-namespace MyApp.Controler
+the total content of your index.php
+	echo RestRoute\Route::routeREST("MyNamespace\\Controller\\");
 
 
+Input Validation
+================
 
+RouteRest allows you to handle input validation as part of the definition of your Controller.
 
+	public function validateInputs($methodCall,$uriArray, $requestVars,$json){
+		switch ($methodCall){
+			case "get":
+				if (!isset($uriArray[1])) return false;
+				if ($uriArray[1] == "") return false;
+				return true;
+			case "post":
+				if(!@json_decode($json)){
+					return true;
+				}
+				return true;
+			default:
+				return true;
+		}
+		
+		return true;
+	}
 
+Implementing this method in your controller to handle input validations. The switch is on the HTTP Method type.
 
