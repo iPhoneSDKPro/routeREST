@@ -32,18 +32,18 @@ For each of the verb you plan on implementing in for the controller you will cre
 Usage
 =====
 
-class BookController{
-	public function GET(){
-		return jsondate;
-	}
-	public function POST{
+	class BookController{
+		public function GET(){
+			return jsondate;
+		}
+		public function POST{
 
-	}
-	public function DELETE(){
+		}
+		public function DELETE(){
 
+		}
 	}
-}
------------------------
+
 The routREST class instanciate your controller object and call the function that matches the VERB used to call the api.
 Within that function you have access to;
 
