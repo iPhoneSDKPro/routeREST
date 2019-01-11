@@ -33,6 +33,9 @@ Usage
 =====
 
 	class BookController{
+	       public function validateInputs($methodCall,$uriArray, $requestVars,$json){
+	       	   //Read below "Input Validation"
+	       }
 		public function GET(){
 			return jsondate;
 		}
@@ -85,3 +88,14 @@ RouteRest allows you to handle input validation as part of the definition of you
 
 Implementing this method in your controller to handle input validations. The switch is on the HTTP Method type.
 
+HTTP Status/Code Response
+=========================
+There is more to a proper coded REST solution than getting the data right. Returning the correct Response codes is more important than just returning a 404, or a 200
+
+RestResponse
+------------
+RESTResponse provides a simple class allowinq the proper return of status code and message.
+
+		$statusMessage = 'URL Path /' . $URI_0 .  ' Not Found';
+		return RESTResponse::ResponseStatus(404, $statusMessage,null);
+			
