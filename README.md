@@ -28,7 +28,10 @@ REST API have very strict VERB/methods
 - PATCH
 
 For each of the verb you plan on implementing in for the controller you will create a public function.
------------------------
+
+Usage
+=====
+
 class BookController{
 	public function GET(){
 		return jsondate;
