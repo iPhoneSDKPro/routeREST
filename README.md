@@ -66,7 +66,7 @@ the total content of your index.php
 Input Validation
 ================
 
-RouteRest allows you to handle input validation as part of the definition of your Controller.
+RouteRest allows you to handle input validation as part of the definition of your Controller. This is an OPTIONAL function. If the function is not part of your ControllerClass the system will not fail.
 
 	public function validateInputs($methodCall,$uriArray, $requestVars,$json){
 		switch ($methodCall){
