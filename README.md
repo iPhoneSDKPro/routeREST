@@ -63,8 +63,8 @@ the total content of your index.php
 	echo RestRoute\Route::routeREST("MyNamespace\\Controller\\");
 
 
-Input Validation
-================
+Input Validation Function
+=========================
 
 RouteRest allows you to handle input validation as part of the definition of your Controller. This is an OPTIONAL function. If the function is not part of your ControllerClass the system will not fail.
 
