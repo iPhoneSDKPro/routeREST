@@ -29,9 +29,9 @@ REST API have very strict VERB/methods
 
 For each of the verb you plan on implementing in for the controller you will create a public function.
 
-Usage
+Basic Method Implementation
 =====
-
+	namespace SampleNameSpace\Controller
 	class BookController{
 	       public static function validateInputs($methodCall,$uriArray, $requestVars,$json){
 	       	   //Read below "Input Validation"
@@ -49,6 +49,7 @@ Usage
 			return $jsondata;
 		}		
 	}
+
 
 The routeREST class instanciate your controller object and call the function that matches the VERB used to call the api.
 Within that function you have access to;
