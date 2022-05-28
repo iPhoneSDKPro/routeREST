@@ -1,3 +1,5 @@
+#RestRout
+
 This package is designed to provide a simple routing component for PHP REST API development.
 
 Routning is automatic. There are not route definitions to create or keep track of. Specificly
@@ -157,6 +159,8 @@ Copy index.php to root folder
 copy the "src" folder from this project to your root folder
 
 modify the composer.jason autolosd/psr-4 section to match the composer.json file in this project
+
+
 	{
 	    "require": {
 		"monolog/monolog": "^3.0"
