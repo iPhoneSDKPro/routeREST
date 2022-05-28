@@ -74,6 +74,7 @@ info:The $uruArray[1] becomes the first uri element after the longest method nam
 			return $jsondata;
                 }
 		
+THe $uriArray would be array("Book", "Title");
 
 
 The routeREST class instanciate your controller object and call the function that matches the VERB used to call the api.
