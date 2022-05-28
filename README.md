@@ -141,4 +141,35 @@ RESTResponse provides a simple class allowinq the proper return of status code a
 
 		$statusMessage = 'URL Path /' . $URI_0 .  ' Not Found';
 		return RESTResponse::ResponseStatus(404, $statusMessage,null);
+
+Installation
+=====
+Install Composer Dependency Manager in the base url folder
+
+Apache
+Mod_ReWrite Enable
+Enable .htaccess
+
+Copy .htaccess to root folder of site
+Copy index.php to root folder
+copy the "src" folder from this project to your root folder
+modify the composer.jason autolosd/psr-4 section to match the composer.json file in this project
+	{
+	    "require": {
+		"monolog/monolog": "^3.0"
+	    },
+	     "autoload": {
+	       "psr-4": {
+			   "RestRoute\\": "src/RestRoute",
+			   "SampleNameSpace\\": "src/SampleNameSpace"
+			}
+	   }
+	}
+	
+Your project customization
+create a new folder in the "src" folder for your project name
+create a new folder in your project folder named "Controller"
+
+
+
 			
