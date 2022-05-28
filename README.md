@@ -80,22 +80,31 @@ http://restserver.xxx/api/Book/Chapter/Title
 info:The $uruArray[1] becomes the first uri element after the longest method name found
 		
 		public static function get_Chapter(($uriArray, $requestVars, $json)){
-			return $jsondata;
+			return RESTResponse::OK($jsondata);
                 }
 		public static function post_Chapter(($uriArray, $requestVars, $json)){
-			return $jsondata;
+			return RESTResponse::OK($jsondata;)
                 }
 		
 THe $uriArray would be array("Book", "Title");
 
 RESTResponse
-------------
-The RESTResponse encapsulates the best proctice implimtation of the HTTP Response object.  
+------------ 
 The routeREST class instanciate your controller object and call the function that matches the VERB used to call the api.
 Within that function you have access to;
 
-URIElements Array
-json - Body data from POST, PUT, PATCH
+RESTResponse::OK($json_data);
+RESTResponse::ResponseStatus($statusCode, $statusMessage, $response)
+
+
+Controller Method Signiture Variables
+------------------
+- **$uriPathArray**
+- $requestVars
+	- requestVars["POST"]
+	- requestVars["GET"]
+	- requestVars["HEADER"]
+	
 php RequestVariables
 php HeaderData
 
@@ -142,19 +151,20 @@ There is more to a proper coded REST solution than getting the data right. Retur
 
 RestResponse
 ------------
-RESTResponse provides a simple class allowinq the proper return of status code and message.
 
-		$statusMessage = 'URL Path /' . $URI_0 .  ' Not Found';
-		return RESTResponse::ResponseStatus(404, $statusMessage,null);
 
 Installation
 =====
 Install Composer Dependency Manager in the base url folder
 
-- Apache Server Modifications
-	- Mod_ReWrite Enable
-	- Enable .htaccess
-	- Copy .htaccess to root folder of site
+- Apache Server Modifications   
+	- wefwe    
+
+	- Mod_ReWrite Enable  
+
+	- Enable .htaccess  
+
+	- Copy .htaccess to root folder of site  
 
 - Copy index.php to root folder
 
