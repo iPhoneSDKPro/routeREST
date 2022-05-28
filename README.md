@@ -1,4 +1,5 @@
-#H RestRout
+routREST
+=====
 
 This package is designed to provide a simple routing component for PHP REST API development.
 
