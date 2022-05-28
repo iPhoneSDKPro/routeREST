@@ -149,9 +149,9 @@ Installation
 Install Composer Dependency Manager in the base url folder
 
 - Apache Server Modifications
-	Mod_ReWrite Enable
-	Enable .htaccess
-	Copy .htaccess to root folder of site
+	- Mod_ReWrite Enable
+	- Enable .htaccess
+	- Copy .htaccess to root folder of site
 
 - Copy index.php to root folder
 
@@ -160,17 +160,17 @@ Install Composer Dependency Manager in the base url folder
 - Modify the composer.jason autolosd/psr-4 section to match the composer.json file in this project
 
 
-	{
-	    "require": {
-		"monolog/monolog": "^3.0"
-	    },
-	     "autoload": {
-	       "psr-4": {
-			   "RestRoute\\": "src/RestRoute",
-			   "SampleNameSpace\\": "src/SampleNameSpace"
-			}
-	   }
-	}
+	{  
+	    "require": {  
+		"monolog/monolog": "^3.0"  
+	    },  
+	     "autoload": {  
+	       "psr-4": {  
+			   "RestRoute\\": "src/RestRoute",  
+			   "SampleNameSpace\\": "src/SampleNameSpace"  
+			}  
+	   }  
+	}  
 	
 Your project customization
 create a new folder in the "src" folder for your project name
