@@ -164,6 +164,9 @@ Install Composer Dependency Manager in the base url folder
 **Your project customization**  
 - Create a new folder in the "src" folder for your project name
 - Create a new folder in your project folder named "Controller"
+	- This is where your Controller Classes will go
+	- Naming is {EndPoint}COntroller.php (See **src/SampleNameSpace** folder for pattern
+	- 
 
 
 
