@@ -46,7 +46,7 @@ Api Call
 http://restserver.xxx/api/Book/
 
 	namespace SampleNameSpace\Controller
-	class BookController{
+	class BookController extends ControllerBase{
 	       public static function validateInputs($methodCall,$uriArray, $requestVars,$json){
 	       	   //Read below "Input Validation"
 	       }
@@ -126,6 +126,10 @@ RouteRest allows you to handle input validation as part of the definition of you
 	}
 
 Implementing this method in your controller to handle input validations. The switch is on the HTTP Method type.
+
+ControllerBase Classs
+=====
+
 
 HTTP Status/Code Response
 =========================
