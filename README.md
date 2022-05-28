@@ -16,7 +16,8 @@ http://restserver.xxx/api/Books/
 
 http://restserver.xxx/api/{CLASS_PATH_ELEMENT}/PARAM_1/PARAM_2}
 
-You must have a php class file named BooksController.php
+The {CLASS_PATH_ELEMENT} translaates to the class file named BooksController.php
+
 
 REST VERBS
 REST API have very strict VERB/methods
