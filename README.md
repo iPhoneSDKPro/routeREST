@@ -12,7 +12,7 @@ For each unique name in what is considered the FIRST api uri parh element you wi
 controller. There is a strict naming convention.
 
 Composer is required.
-=====
+-----
 https://getcomposer.org/
 
 I use Composer to autoload the "psr-4" namespaces for project namespaces. See the included compose.json file for the example for the auroload section for the examples in the repository.
