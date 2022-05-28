@@ -53,7 +53,8 @@ http://restserver.xxx/api/Book/
 	       	   //Read below "Input Validation"
 	       }
 		public static function get(($uriArray, $requestVars, $json)){
-			return $jsondata;
+			return RESTResponse::OK($jsondata);
+			
 		}
 		public static function post(($uriArray, $requestVars, $json)){
 			return $jsondata;
@@ -87,7 +88,9 @@ info:The $uruArray[1] becomes the first uri element after the longest method nam
 		
 THe $uriArray would be array("Book", "Title");
 
-
+RESTResponse
+------------
+The RESTResponse encapsulates the best proctice implimtation of the HTTP Response object.  
 The routeREST class instanciate your controller object and call the function that matches the VERB used to call the api.
 Within that function you have access to;
 
