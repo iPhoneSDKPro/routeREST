@@ -12,9 +12,9 @@ Naming Convention:
 
 In the example below, 'Books' is the first significant element of the api call
 
-http://restserver.xxx/api/vi/Books/
+http://restserver.xxx/api/Books/
 
-http://restserver.xxx/api/vi/{FIRST_PATH_ELEMENT}/
+http://restserver.xxx/api/{FIRST_PATH_ELEMENT}/
 
 You must have a php class file named BooksController.php
 
@@ -33,7 +33,7 @@ Usage
 =====
 
 	class BookController{
-	       public function validateInputs($methodCall,$uriArray, $requestVars,$json){
+	       public static function validateInputs($methodCall,$uriArray, $requestVars,$json){
 	       	   //Read below "Input Validation"
 	       }
 		public static function get(($uriArray, $requestVars, $json)){
@@ -45,9 +45,12 @@ Usage
 		public static function delete(($uriArray, $requestVars, $json)){
 			return $jsondata;
 		}
+		public static function patch(($uriArray, $requestVars, $json)){
+			return $jsondata;
+		}		
 	}
 
-The routREST class instanciate your controller object and call the function that matches the VERB used to call the api.
+The routeREST class instanciate your controller object and call the function that matches the VERB used to call the api.
 Within that function you have access to;
 
 URIElements Array
@@ -68,7 +71,7 @@ Input Validation Function
 
 RouteRest allows you to handle input validation as part of the definition of your Controller. This is an OPTIONAL function. If the function is not part of your ControllerClass the system will not fail.
 
-	public function validateInputs($methodCall,$uriArray, $requestVars,$json){
+	public static function validateInputs($methodCall,$uriArray, $requestVars,$json){
 		switch ($methodCall){
 			case "get":
 				if (!isset($uriArray[1])) return false;
