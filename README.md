@@ -57,13 +57,14 @@ http://restserver.xxx/api/Book/
 			
 		}
 		public static function post(($uriArray, $requestVars, $json)){
-			return $jsondata;
+			
+			return RESTResponse::OK($jsondata);
 		}
 		public static function delete(($uriArray, $requestVars, $json)){
-			return $jsondata;
+			return RESTResponse::OK($jsondata);
 		}
 		public static function patch(($uriArray, $requestVars, $json)){
-			return $jsondata;
+			return RESTResponse::OK($jsondata);
 		}		
 	}
 
