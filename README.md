@@ -157,24 +157,13 @@ Install Composer Dependency Manager in the base url folder
 
 - Copy the "src" folder from this project to your root folder
 
-- Modify the composer.jason autolosd/psr-4 section to match the composer.json file in this project
-
-
-	{  
-	    "require": {  
-		"monolog/monolog": "^3.0"  
-	    },  
-	     "autoload": {  
-	       "psr-4": {  
-			   "RestRoute\\": "src/RestRoute",  
-			   "SampleNameSpace\\": "src/SampleNameSpace"  
-			}  
-	   }  
-	}  
+- Modify the composer.jason autolosd/psr-4 section to match the composer.json file in this project. Use the one in this project as a guide.
+	- You need to add the section autoload/psr-4 entries as seen in this project
+		
 	
-Your project customization
-create a new folder in the "src" folder for your project name
-create a new folder in your project folder named "Controller"
+**Your project customization**  
+- Create a new folder in the "src" folder for your project name
+- Create a new folder in your project folder named "Controller"
 
 
 
