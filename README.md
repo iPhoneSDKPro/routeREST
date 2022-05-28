@@ -105,9 +105,9 @@ the total content of your index.php
 
 
 Input Validation Function
-=========================
+------
 
-RouteRest allows you to handle input validation as part of the definition of your Controller. This is an OPTIONAL function. If the function is not part of your ControllerClass the system will not fail.
+RouteRest allows you to handle input validation as part of the definition of your Controller. This is an OPTIONAL function. The function is defined in the ControllerBase class. The base class retruns boolean true bay dault. You must override the method in your Controller Class
 
 	public static function validateInputs($methodCall,$uriArray, $requestVars,$json){
 		switch ($methodCall){
