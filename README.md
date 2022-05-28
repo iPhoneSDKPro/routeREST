@@ -151,8 +151,11 @@ Mod_ReWrite Enable
 Enable .htaccess
 
 Copy .htaccess to root folder of site
+
 Copy index.php to root folder
+
 copy the "src" folder from this project to your root folder
+
 modify the composer.jason autolosd/psr-4 section to match the composer.json file in this project
 	{
 	    "require": {
