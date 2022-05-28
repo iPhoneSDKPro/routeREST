@@ -14,7 +14,7 @@ In the example below, 'Books' is the first significant element of the api call
 
 http://restserver.xxx/api/Books/
 
-http://restserver.xxx/api/{FIRST_PATH_ELEMENT}/
+http://restserver.xxx/api/{CLASS_PATH_ELEMENT}/PARAM_1/PARAM_2}
 
 You must have a php class file named BooksController.php
 
@@ -31,6 +31,10 @@ For each of the verb you plan on implementing in for the controller you will cre
 
 Basic Method Implementation
 =====
+
+Api Call
+http://restserver.xxx/api/Book/
+
 	namespace SampleNameSpace\Controller
 	class BookController{
 	       public static function validateInputs($methodCall,$uriArray, $requestVars,$json){
@@ -49,6 +53,26 @@ Basic Method Implementation
 			return $jsondata;
 		}		
 	}
+
+Long Uri Method Route
+=====
+
+The Route function attemots to find the longest function name available in the class until the longest name is found.
+
+Long Uri name routiung allows for more advanced method naming instead of using logic to determine functionality in the call below, using the advances long uri function naming convention.
+
+Api Call
+http://restserver.xxx/api/Book/Chapter/Title
+
+info:The $uruArray[1] becomes the first uri element after the longest method name found
+		
+		public static function get_Chapter(($uriArray, $requestVars, $json)){
+			return $jsondata;
+                }
+		public static function post_Chapter(($uriArray, $requestVars, $json)){
+			return $jsondata;
+                }
+		
 
 
 The routeREST class instanciate your controller object and call the function that matches the VERB used to call the api.
