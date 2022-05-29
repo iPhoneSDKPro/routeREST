@@ -160,7 +160,6 @@ Installation
 Install Composer Dependency Manager in the base url folder
 
 - Apache Server Modifications   
-	- wefwe    
 
 	- Mod_ReWrite Enable  
 
