@@ -50,21 +50,21 @@ http://restserver.xxx/api/Book/
 
 	namespace SampleNameSpace\Controller
 	class BookController extends ControllerBase{
-	       public static function validateInputs($methodCall,$uriArray, $requestVars,$json){
+	       public static function validateInputs($methodCall,$uriPathArray, $requestVars,$json){
 	       	   //Read below "Input Validation"
 	       }
-		public static function get(($uriArray, $requestVars, $json)){
+		public static function get(($uriPathArray, $requestVars, $json)){
 			return RESTResponse::OK($jsondata);
 			
 		}
-		public static function post(($uriArray, $requestVars, $json)){
+		public static function post(($uriPathArray, $requestVars, $json)){
 			
 			return RESTResponse::OK($jsondata);
 		}
-		public static function delete(($uriArray, $requestVars, $json)){
+		public static function delete(($uriPathArray, $requestVars, $json)){
 			return RESTResponse::OK($jsondata);
 		}
-		public static function patch(($uriArray, $requestVars, $json)){
+		public static function patch(($uriPathArray, $requestVars, $json)){
 			return RESTResponse::OK($jsondata);
 		}		
 	}
@@ -81,14 +81,14 @@ http://restserver.xxx/api/Book/Chapter/Title
 
 info:The $uruArray[1] becomes the first uri element after the longest method name found
 		
-		public static function get_Chapter(($uriArray, $requestVars, $json)){
+		public static function get_Chapter(($uriPathArray, $requestVars, $json)){
 			return RESTResponse::OK($jsondata);
                 }
-		public static function post_Chapter(($uriArray, $requestVars, $json)){
+		public static function post_Chapter(($uriPathArray, $requestVars, $json)){
 			return RESTResponse::OK($jsondata;)
                 }
 		
-THe $uriArray would be array("Book", "Title");
+THe $uriPathArray would be array("Book", "Title");
 
 RESTResponse
 ------------ 
@@ -123,11 +123,11 @@ Input Validation Function
 
 RouteRest allows you to handle input validation as part of the definition of your Controller. This is an OPTIONAL function. The function is defined in the ControllerBase class. The base class retruns boolean true bay dault. You must override the method in your Controller Class
 
-	public static function validateInputs($methodCall,$uriArray, $requestVars,$json){
+	public static function validateInputs($methodCall,$uriPathArray, $requestVars,$json){
 		switch ($methodCall){
 			case "get":
-				if (!isset($uriArray[1])) return false;
-				if ($uriArray[1] == "") return false;
+				if (!isset($uriPathArray[1])) return false;
+				if ($uriPathArray[1] == "") return false;
 				return true;
 			case "post":
 				if(!@json_decode($json)){
