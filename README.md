@@ -157,6 +157,8 @@ RestResponse
 
 Installation
 =====
+Download the VirtualBox VM from my google drive (coming soon)
+
 Install Composer Dependency Manager in the base url folder
 
 - Apache Server Modifications   
