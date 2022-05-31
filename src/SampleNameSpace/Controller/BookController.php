@@ -22,12 +22,16 @@ use RestRoute\RESTResponse;
  */
 class BookController  extends ControllerBase{
 
-    public static function post($uriPathArray, $requestVars,$json){
-       // echo "GET:Book" . chr(13);
-       // echo implode(chr(13),$uriPathArray) . chr(13);;
-      //  var_dump($requestVars);
+    public static function Authorize($method, $uri,$requestVars,$json){
+        return Authorize::AuthorizeUser($requestVars["HEADER"]);
+    }
 
-       return RESTResponse::OK($json);
+    public static function post($uriPathArray, $requestVars,$json){
+         echo "GET:Book" . chr(13);
+         echo implode(chr(13),$uriPathArray) . chr(13);;
+         var_dump($requestVars);
+
+        return RESTResponse::OK($json);
     }
     public static function get_List($uriPathArray, $requestVars,$json){
         echo "GET:Book/Chapter" . chr(13);
