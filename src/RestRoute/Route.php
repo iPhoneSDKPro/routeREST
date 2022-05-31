@@ -49,13 +49,19 @@ class Route{
 
 			//If long Path is found make that the $method to be called
 			if ($callMethod != "") $method = $callMethod;
-			
+
 			if (method_exists($controller,$method)){
 				if (method_exists($controller,"validateInputs")){
 					
 					if (!$controller->validateInputs($method,$uri,$requestVars,$json)){
 						RESTResponse::ResponseStatus(401, "Malformed Request", null);
 						die();
+					}
+				}
+				if (array_key_exists("Authorization", $requestVars['HEADER'])){
+					if (!$controller::Authorize($method, $uri,$requestVars,$json)){
+						$statusMessage = "Authorization Failed";
+						return RESTResponse::ResponseStatus(401, $statusMessage,null);
 					}
 				}
 				return $controller->$method($uri,$requestVars,$json);

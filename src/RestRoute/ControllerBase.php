@@ -3,6 +3,9 @@ namespace RestRoute;
 use RestRoute\RESTResponse;
 
 class ControllerBase{
+	public static function Authorize($method, $uri,$requestVars,$json){
+		return false;
+	}
 	public static function validateInputs($uriPathArray, $requestVars,$json){
 		return true;
 	}
