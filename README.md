@@ -187,8 +187,8 @@ Examples and Tests:
 =====
 I have included the Poatman Collection that I used to verify the accuricy of the examples used for SampleNameSpace project in the repository
 
-From the Postman Collection Requests
+From the Postman Collection Requests  
 -Book List*Authorized*
 ----
-{{server}}/API/Book/List
+GET:{{server}}/API/Book/List
 
