@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "a5a45a12-eaeb-45e9-a0aa-5fa80e0b6718",
+		"name": "RoutRest Development",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Book List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"require\": {\n        \"monolog/monolog\": \"^3.0\"\n    },\n     \"autoload\": {\n       \"psr-4\": {\n                   \"RestRoute\\\\\": \"src/RestRoute\",\n                   \"SampleNameSpace\\\\\": \"src/SampleNameSpace\"\n                }\n   }\n}\n"
+				},
+				"url": {
+					"raw": "{{server}}/API/Book/List",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"API",
+						"Book",
+						"List"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book List*Authorized*",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "2XRN3pxz#h70dhHG2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "ESfc7BJ#i3eyEB02",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"require\": {\n        \"monolog/monolog\": \"^3.0\"\n    },\n     \"autoload\": {\n       \"psr-4\": {\n                   \"RestRoute\\\\\": \"src/RestRoute\",\n                   \"SampleNameSpace\\\\\": \"src/SampleNameSpace\"\n                }\n   }\n}\n"
+				},
+				"url": {
+					"raw": "{{server}}/API/Book/List",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"API",
+						"Book",
+						"List"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Chapter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"require\": {\n        \"monolog/monolog\": \"^3.0\"\n    },\n     \"autoload\": {\n       \"psr-4\": {\n                   \"RestRoute\\\\\": \"src/RestRoute\",\n                   \"SampleNameSpace\\\\\": \"src/SampleNameSpace\"\n                }\n   }\n}\n"
+				},
+				"url": {
+					"raw": "{{server}}/API/Book/Chapter/Title",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"API",
+						"Book",
+						"Chapter",
+						"Title"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
