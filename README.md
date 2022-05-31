@@ -185,11 +185,12 @@ Install Composer Dependency Manager in the base url folder
 
 Examples and Tests:
 =====
-I have included the Poatman Collection that I used to verify the accuricy of the examples used for SampleNameSpace project in the repository
+I have included the Poatman Collection that I used to verify the accuricy of the examples used for SampleNameSpace project in the repository.
+The link will allow you  to view and execute the requests against your own server
+RouteREST Postman Public Workspace - https://www.postman.com/captjames/workspace/routerest/overview
 
-From the Postman Collection Requests  
--Book List *Authorized*
+Explaination of Postman Collection Requests and how they are routed.
+-Book List*Authorized*
 ----
-GET:{{server}}/API/Book/List
-This call would resolve to the default *get* method as there is no meethod defined *get_List*
+{{server}}/API/Book/List
 
