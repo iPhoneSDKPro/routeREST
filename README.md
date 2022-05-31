@@ -188,7 +188,8 @@ Examples and Tests:
 I have included the Poatman Collection that I used to verify the accuricy of the examples used for SampleNameSpace project in the repository
 
 From the Postman Collection Requests  
--Book List*Authorized*
+-Book List *Authorized*
 ----
 GET:{{server}}/API/Book/List
+This call would resolve to the default *get* method as there is no meethod defined *get_List*
 
