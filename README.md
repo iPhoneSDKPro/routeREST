@@ -15,7 +15,7 @@ Composer is required.
 -----
 https://getcomposer.org/
 
-I use Composer to autoload the "psr-4" namespaces for project namespaces. See the included compose.json file for the example for the auroload section for the examples in the repository.
+I use Composer to autoload the "psr-4" namespaces for project namespaces. See the included compose.json file for the example for the autoload section for the examples in the repository.
 
 At some point I will make this a composer library.
 
