@@ -79,7 +79,7 @@ Long Uri name routiung allows for more advanced method naming instead of using l
 Api Call
 http://restserver.xxx/api/Book/Chapter/Title
 
-info:The $uruArray[1] becomes the first uri element after the longest method name found
+info:The $uriPathArray[1] becomes the first uri element after the longest method name found
 		
 		public static function get_Chapter(($uriPathArray, $requestVars, $json)){
 			return RESTResponse::OK($jsondata);
