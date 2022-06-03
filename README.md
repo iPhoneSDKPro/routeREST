@@ -10,6 +10,7 @@ URI structure.
 Automatic PATH routing is accomplished by using a simple pattern for developing controllers.
 For each unique name in what is considered the FIRST api uri parh element you will create a
 controller. There is a strict naming convention.
+Chek out the Facebook Page :https://www.facebook.com/Route-REST-101026222643562
 
 Composer is required.
 -----
