@@ -157,7 +157,9 @@ RestResponse
 
 Installation
 =====
-Download the VirtualBox VM from my google drive (coming soon)
+Download the VirtualBox VM from my google drive:
+https://drive.google.com/file/d/1NDCVu-d2YEyLsB8ZP4WUdQP6GgyXRIbI/view?usp=sharing
+
 
 Install Composer Dependency Manager in the base url folder
 
