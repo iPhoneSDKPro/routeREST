@@ -157,7 +157,7 @@ RestResponse
 
 Installation
 =====
-Download the VirtualBox VM from my google drive:
+Download the VirtualBox VM from my google drive: 
 https://drive.google.com/file/d/1NDCVu-d2YEyLsB8ZP4WUdQP6GgyXRIbI/view?usp=sharing
 
 
