@@ -43,6 +43,16 @@ REST API have very strict VERB/methods
 
 For each of the verb you plan on implementing in for the controller you will create a public function.
 
+PageController vs. API
+-----
+
+In the index.php file there is a check for API in the URI. If not an API call the request is directed to the PageController section.
+As of this initial posting I have not documented the design of the PageController functionallity as I have not pulled an example out of my current project.  
+The projects I develop use APIs to collect the data for the Web pages because I need the API for the associated mobile app, so I use RoutRest for both Web pages as well as the API for data.
+
+In the fuuture I will provide examples as well as updates to the Virtual machine.
+
+
 Basic Method Implementation
 =====
 
