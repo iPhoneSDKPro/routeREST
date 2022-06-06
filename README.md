@@ -172,6 +172,10 @@ Installation
 Download the VirtualBox VM from my google drive:   
 https://drive.google.com/file/d/1NDCVu-d2YEyLsB8ZP4WUdQP6GgyXRIbI/view?usp=sharing
 
+Login credentials   
+username/passwore   
+adminuser/adminuser   
+
 This Virtual Server can be launched from VirtualBox. VirtualBox is FREE. Set the Network configuration in VirtualBox to bridged and you can access the routeREST instance installed in the root default web.
 
 - Option 2   
