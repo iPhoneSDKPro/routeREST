@@ -29,7 +29,7 @@ http://restserver.xxx/api/Book/
 
 http://restserver.xxx/api/{CLASS_PATH_ELEMENT}/PARAM_1/PARAM_2}
 
-The {CLASS_PATH_ELEMENT} translaates to the class file named BooksController.php
+The {CLASS_PATH_ELEMENT} translates to the class file named BooksController.php
 
 
 REST VERBS
