@@ -22,7 +22,7 @@ At some point I will make this a composer library.
 
 
 Naming Convention:
-
+----
 In the example below, 'Book' is the first significant element of the api call
 
 http://restserver.xxx/api/Book/
