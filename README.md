@@ -103,7 +103,7 @@ THe $uriPathArray would be array("Book", "Title");
 
 RESTResponse
 ------------ 
-The routeREST class instanciate your controller object and call the function that matches the VERB used to call the api.
+The routeREST class instanciates your controller object and calls the function that matches the VERB used to call the api.
 Within that function you have access to;
 
 RESTResponse::OK($json_data);
